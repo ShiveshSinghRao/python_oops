@@ -13,10 +13,10 @@ class A:
 
 
 
-# obj = A()
-# obj.check(1)
-check_2(1)
-check_2(1,"bob")
+obj = A()
+obj.check(1)
+# check_2(1)
+# check_2(1,"bob")
 
 
 """
@@ -30,6 +30,11 @@ The second check_2 function overrides the first one
 Python only keeps the latest definition
 
 So effectively, Python sees only this:
-def check_2(num:int):
-    print(f"hello bunny with only num:{num}")
+```
+        def check_2(num:int):
+            print(f"hello bunny with only num:{num}")
+```
+- Python does not support method/function overloading by default
+
+- Latest function definition overwrites previous ones
 """
