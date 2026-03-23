@@ -15,3 +15,7 @@ class BankAccount:
 acc = BankAccount()
 acc.balance =500
 print(acc.balance)
+
+
+# self._balance  this is internal
+# self.balance    this is property 
