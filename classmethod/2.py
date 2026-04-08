@@ -1,9 +1,15 @@
-# when to use this 
-# when logic is related to class not a specific object
-# mostly by factory pattern
+class Car:
+    count = 0
 
-class User:
-    def __init__(self, name, age):
-        self.name= name
-        self.age= age
-        
+    def __init__(self):
+        Car.count += 1
+
+    @classmethod
+    def total_cars(cls):
+        return cls.count
+
+
+c1 = Car()
+c2 = Car()
+
+print(Car.total_cars())  # Expected: 2
