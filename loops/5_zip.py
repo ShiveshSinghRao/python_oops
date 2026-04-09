@@ -1,4 +1,5 @@
-fruits = ["apple", "banana", "cherry"]
+names = ["A", "B", "C"]
+scores = [90, 85, 88]
 
-for index, fruit in enumerate(fruits):
-    print(index, fruit)
+for name, score in zip(names, scores):
+    print(name, score)
