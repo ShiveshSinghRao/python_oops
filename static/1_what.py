@@ -9,7 +9,7 @@ print(result)
 
 # Option B: call on a instance also works but self is not passed 
 res2= A()
-ans = A.(39,1)
+ans = res2.add(39,1)
 print(ans)
 
 
